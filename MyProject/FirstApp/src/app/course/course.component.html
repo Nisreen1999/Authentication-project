@@ -1,0 +1,18 @@
+<h2>Course Table</h2>
+<div class="table-wrapper">
+    <table class="fl-table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let x of courses">
+            <td>{{x.id}}</td>
+            <td>{{x.name}}</td>
+        </tr>
+   
+        <tbody>
+    </table>
+</div>

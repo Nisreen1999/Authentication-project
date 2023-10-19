@@ -1,0 +1,21 @@
+<form [formGroup]="form" >
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form action="#">
+        <input type="text" placeholder="Enter your username" formControlName="username">
+        <input type="password" placeholder="Enter your password" formControlName="password">
+        <input type="checkbox" id="RememberMe" />Remember me
+        <br>
+        <a href="#">Forgot password?</a>
+        <input type="button" class="button" value="Login" (click)="Login()">
+      </form>
+      <div class="signup">
+        <span class="signup" >Don't have an account?
+         <label for="check" (click)="SignupPage()">Signup</label>
+        </span>
+      </div>
+    </div>
+  </div>
+</form>

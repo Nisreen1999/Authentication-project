@@ -1,0 +1,26 @@
+<form [formGroup]="form" >
+<div class="container">
+  <input type="checkbox" id="check">
+  <div class="login form">
+    <header>Signup</header>
+
+      <input type="text" placeholder="Enter your email" formControlName="email">
+      <input type="text" placeholder="Enter your username" formControlName="username">
+      <input type="password" placeholder="Enter your password" formControlName="password">
+      <label for="psw"><b>Role</b></label>
+      <br>
+    <select formControlName="RoleName">
+    <option *ngFor="let x of roles" [value]="x.name" >{{x.name}}</option>    
+    </select>
+      <input type="button" class="button" (click)="Signup()" value="Signup">
+      <div class="signup">
+        <span class="signup"> have an account?
+         <label for="check" (click)="Login()">Login</label>
+        </span>
+      </div>
+  </div>
+  
+</div>
+
+</form>
+
